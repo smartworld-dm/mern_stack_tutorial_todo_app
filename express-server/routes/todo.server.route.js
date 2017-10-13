@@ -3,6 +3,9 @@ import express from 'express';
 
 //import controller file
 import * as todoController from '../controllers/todo.server.controller';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 // get an instance of express router
 const router = express.Router();
